@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Website Kearifan Lokal Tulungagung — upacara adat, kesenian, wisata, kuliner, dan nilai kehidupan masyarakat lokal."
+    />
+    <title>Kearifan Lokal Tulungagung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- PAGE LOADER -->
+    <div class="page-loader" role="status" aria-label="Memuat halaman">
+      <div class="loader-ring"></div>
+      <span class="loader-text">Memuat...</span>
+    </div>
+
+    <!-- SCROLL PROGRESS BAR -->
+    <div class="progress-bar" aria-hidden="true"></div>
+
+    <!-- HEADER -->
+    <header class="header" role="banner">
+      <nav class="container navbar" aria-label="Navigasi utama">
+        <a href="index.html" class="logo">
+          Kearifan Lokal
+        </a>
+
+        <button
+          class="menu-toggle"
+          aria-label="Buka menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" role="list">
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="upacara.html">Upacara Adat</a></li>
+          <li><a href="seni.html">Seni Pertunjukan</a></li>
+          <li><a href="nilai.html">Nilai Kehidupan</a></li>
+          <li><a href="wisata.html">Wisata Lokal</a></li>
+          <li><a href="kuliner.html">Kuliner Lokal</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO WITH SLIDESHOW BACKGROUND -->
+    <section class="hero" aria-label="Beranda hero">
+      <div class="hero-bg slide-1" aria-hidden="true"></div>
+      <div class="hero-bg slide-2" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content fade-up">
+          <span class="eyebrow">Kearifan Lokal Tulungagung</span>
+          <h1>Menjaga Tradisi Lokal dengan Sentuhan Modern Generasi Muda</h1>
+          <hr />
+          <p>
+            Tak sekadar pantai yang memukau, Tulungagung adalah tentang
+            harmonisasi. Di sini, warisan budaya yang kental berpadu serasi
+            dengan inovasi masa kini. Temukan sisi lain Jawa Timur yang tak
+            hanya indah dipandang, tapi juga punya jiwa yang kuat.
+          </p>
+          <div class="hero-buttons">
+            <a href="#tentang" class="btn primary-btn">🌿 Jelajahi Yuk!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TENTANG -->
+    <section
+      class="highlight-section"
+      id="tentang"
+      aria-labelledby="tentang-heading"
+    >
+      <div class="container cards-grid">
+        <article class="card fade-up">
+          <h2 id="tentang-heading">Kearifan Lokal</h2>
+          <hr />
+          <p>
+            <strong>
+              Memahami kearifan lokal berarti menyadari bahwa identitas sebuah
+              masyarakat tumbuh dari kebiasaan, nilai, dan pengalaman yang sudah
+              diwariskan turun-temurun. Di tengah arus globalisasi, kearifan
+              lokal menjadi kompas moral yang membantu kita tetap menjaga akar
+              budaya, menghargai alam, dan hidup secara harmonis dengan sesama.
+              Kearifan lokal bukan sekadar tradisi kuno, melainkan bentuk
+              kecerdasan kolektif yang adaptif, kuat, dan tetap relevan di era
+              modern. Nilai-nilai yang terkandung di dalamnya mengajarkan kita
+              tentang gotong royong, disiplin, rasa syukur, serta tanggung jawab
+              terhadap lingkungan dan masa depan bersama. Dalam praktiknya,
+              kearifan lokal terlihat pada berbagai bentuk kehidupan — mulai
+              dari upacara adat, seni pertunjukan, hingga aturan sosial yang
+              menjaga keseimbangan antara manusia dan alam. Dengan memahami dan
+              melestarikannya, kita tidak hanya mengenal budaya Tulungagung,
+              tetapi juga menumbuhkan rasa bangga, empati, dan kepedulian
+              terhadap warisan yang harus terus dijaga.
+            </strong>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- KEKAYAAN BUDAYA -->
+    <section
+      class="budaya-section"
+      id="budaya"
+      aria-labelledby="budaya-heading"
+    >
+      <div class="container">
+        <div class="section-title fade-up">
+          <span class="eyebrow">Kekayaan Lokal</span>
+          <h2 id="budaya-heading">Kekayaan Daerah Tulungagung</h2>
+        </div>
+
+        <div class="budaya-grid">
+          <a
+            href="upacara.html"
+            class="budaya-card-link fade-up"
+            data-tooltip="Lihat Upacara Adat"
+          >
+            <article class="budaya-card">
+              <img
+                src="image/imageupacara.png"
+                alt="Upacara adat Tulungagung"
+                loading="lazy"
+              />
+              <div class="budaya-info">
+                <span class="tag">Tradisi</span>
+                <h3>Upacara Adat</h3>
+                <p>
+                  Tradisi budaya yang menjadi simbol rasa syukur masyarakat.
+                </p>
+              </div>
+            </article>
+          </a>
+
+          <a
+            href="seni.html"
+            class="budaya-card-link fade-up"
+            data-tooltip="Lihat Seni Pertunjukan"
+          >
+            <article class="budaya-card">
+              <img
+                src="image/imageseni.png"
+                alt="Seni pertunjukan Tulungagung"
+                loading="lazy"
+              />
+              <div class="budaya-info">
+                <span class="tag">Kesenian</span>
+                <h3>Seni Pertunjukan</h3>
+                <p>Kesenian lokal yang diwariskan secara turun-temurun.</p>
+              </div>
+            </article>
+          </a>
+
+          <a
+            href="nilai.html"
+            class="budaya-card-link fade-up"
+            data-tooltip="Lihat Nilai Kehidupan"
+          >
+            <article class="budaya-card">
+              <img
+                src="image/imagenilai.png"
+                alt="Nilai kehidupan masyarakat Tulungagung"
+                loading="lazy"
+              />
+              <div class="budaya-info">
+                <span class="tag">Filosofi</span>
+                <h3>Nilai Kehidupan</h3>
+                <p>
+                  Nilai luhur masyarakat tentang gotong royong dan kebersamaan.
+                </p>
+              </div>
+            </article>
+          </a>
+
+          <a
+            href="wisata.html"
+            class="budaya-card-link fade-up"
+            data-tooltip="Lihat Wisata Lokal"
+          >
+            <article class="budaya-card">
+              <img
+                src="image/imagewisata.png"
+                alt="Keindahan alam Tulungagung"
+                loading="lazy"
+              />
+              <div class="budaya-info">
+                <span class="tag">Wisata</span>
+                <h3>Wisata Lokal</h3>
+                <p>
+                  Jelajahi keindahan Tulungagung lewat pantai, goa, dan desa
+                  tradisional yang memikat.
+                </p>
+              </div>
+            </article>
+          </a>
+
+          <a
+            href="kuliner.html"
+            class="budaya-card-link fade-up"
+            data-tooltip="Lihat Kuliner Lokal"
+          >
+            <article class="budaya-card">
+              <img
+                src="image/imagekuliner.png"
+                alt="Kuliner khas Tulungagung"
+                loading="lazy"
+              />
+              <div class="budaya-info">
+                <span class="tag">Kuliner</span>
+                <h3>Kuliner Lokal</h3>
+                <p>
+                  Rasakan cita rasa autentik makanan tradisional Tulungagung
+                  yang dibuat dengan resep turun-temurun.
+                </p>
+              </div>
+            </article>
+          </a>
+
+          <a
+            href="https://museum.tulungagung.go.id"
+            class="museum-card-link fade-up"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-tooltip="Kunjungi Museum Virtual"
+          >
+            <article class="budaya-card">
+              <img
+                src="image/imagemuseum.png"
+                alt="Museum di Tulungagung"
+                loading="lazy"
+              />
+              <div class="budaya-info">
+                <span class="tag">Museum</span>
+                <h3>Museum Lokal</h3>
+                <p>
+                  Temukan sejarah dan budaya Tulungagung melalui koleksi museum
+                  yang menarik.
+                </p>
+              </div>
+            </article>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <p>
+          &copy; 2026 Kearifan Lokal Tulungagung —
+          <span style="color: var(--accent)">House Kuning Team</span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" aria-label="Kembali ke atas">↑</button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

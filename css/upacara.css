@@ -1,0 +1,63 @@
+/* ============================================================
+   UPACARA ADAT — Page-specific overrides
+   Aksen: Merah-Emas (warna sakral/ritual)
+   ============================================================ */
+
+:root {
+  --page-accent: #e85d26;
+  --page-accent-light: rgba(232, 93, 38, 0.12);
+}
+
+/* Hero dengan background pattern batik */
+.hero.hero-static {
+  background: linear-gradient(135deg, #1a0a05 0%, #2d1208 40%, #0f172a 100%);
+}
+
+.hero.hero-static::before {
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(232, 93, 38, 0.1) 0%, transparent 70%);
+}
+
+/* Override accent untuk halaman ini */
+.eyebrow {
+  background: var(--page-accent-light);
+  color: var(--page-accent);
+  border-color: rgba(232, 93, 38, 0.25);
+}
+
+.tag {
+  background: var(--page-accent-light);
+  color: var(--page-accent);
+  border-color: rgba(232, 93, 38, 0.2);
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, var(--page-accent), #c0440f);
+  box-shadow: 0 4px 15px rgba(232, 93, 38, 0.3);
+}
+
+.primary-btn:hover {
+  box-shadow: 0 10px 30px rgba(232, 93, 38, 0.4);
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, var(--page-accent), #f0813a);
+}
+
+.back-to-top {
+  background: linear-gradient(135deg, var(--page-accent), #c0440f);
+  box-shadow: 0 4px 20px rgba(232, 93, 38, 0.4);
+}
+
+.card {
+  background: linear-gradient(135deg, rgba(200, 80, 30, 0.9) 0%, rgba(160, 60, 20, 0.9) 100%);
+}
+
+/* Dekoratif: motif batik abstrak di section header */
+.budaya-section .section-title::after {
+  content: "✦ ✦ ✦";
+  display: block;
+  color: rgba(232, 93, 38, 0.3);
+  font-size: 0.9rem;
+  letter-spacing: 0.5em;
+  margin-top: 0.75rem;
+}
