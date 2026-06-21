@@ -1,6 +1,34 @@
 /* =========================================
-   KEARIFAN LOKAL TULUNGAGUNG — GLOBAL CSS
+   KEARIFAN LOKAL TULUNGAGUNG
+   CSS MASTER (GLOBAL)
    ========================================= */
+
+/*
+  Catatan:
+  - Bagian spesifik halaman disiapkan dengan wrapper class di <body>
+    (page-index / page-upacara / page-seni) agar stylesheet tetap rapi.
+*/
+
+/* ===== INDEX PAGE STYLE ===== */
+.page-index .highlight-section .cards-grid .card:only-child {
+  grid-column: 1 / -1;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* ===== UPACARA PAGE STYLE ===== */
+.page-upacara .hero-content p {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== SENI PAGE STYLE ===== */
+.page-seni .hero-content p {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 :root {
   --bg: #07112b;
@@ -59,9 +87,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 ul {
   list-style: none;
 }
+
 button {
   cursor: pointer;
   font-family: inherit;
@@ -537,6 +567,36 @@ button {
 }
 
 /* ──────────────────────────────────────
+   MAP SECTION
+────────────────────────────────────── */
+.map-section {
+  padding: 1rem 0 5rem;
+}
+
+.map-section h2 {
+  color: #fff;
+  font-size: clamp(1.75rem, 4vw, 2.4rem);
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.map-container {
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow-md);
+  background: var(--navy);
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  min-height: 360px;
+  border: 0;
+}
+
+/* ──────────────────────────────────────
    BACK TO TOP BUTTON
 ────────────────────────────────────── */
 .back-to-top {
@@ -638,6 +698,10 @@ button {
 
 .footer a:hover {
   color: #fcd34d;
+}
+
+.footer-brand {
+  color: var(--accent);
 }
 
 /* ──────────────────────────────────────

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body>
+  <body class="page-index">
     <!-- PAGE LOADER -->
     <div class="page-loader" role="status" aria-label="Memuat halaman">
       <div class="loader-ring"></div>
@@ -30,9 +30,7 @@
     <!-- HEADER -->
     <header class="header" role="banner">
       <nav class="container navbar" aria-label="Navigasi utama">
-        <a href="index.html" class="logo">
-          Kearifan Lokal
-        </a>
+        <a href="index.html" class="logo">Kearifan Lokal</a>
 
         <button
           class="menu-toggle"
@@ -51,6 +49,15 @@
           <li><a href="nilai.html">Nilai Kehidupan</a></li>
           <li><a href="wisata.html">Wisata Lokal</a></li>
           <li><a href="kuliner.html">Kuliner Lokal</a></li>
+          <li><a href="article.html">Artikel</a></li>
+          <li>
+            <a
+              href="https://visit.virtualartgallery.com/museumtitiktemutulungagung"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Museum Virtual</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -66,13 +73,22 @@
           <h1>Menjaga Tradisi Lokal dengan Sentuhan Modern Generasi Muda</h1>
           <hr />
           <p>
-            Tak sekadar pantai yang memukau, Tulungagung adalah tentang
-            harmonisasi. Di sini, warisan budaya yang kental berpadu serasi
-            dengan inovasi masa kini. Temukan sisi lain Jawa Timur yang tak
-            hanya indah dipandang, tapi juga punya jiwa yang kuat.
+            Selamat datang di Tulungagung. Kota yang bukan hanya cantik dengan
+            garis pantaiannya, tetapi juga hangat dengan tradisi yang masih
+            hidup. Dari Ritual Ulur-Ulur Telaga Buret hingga Reog Kendang yang
+            enerjik, setiap sudutnya menyimpan cerita tentang rasa syukur,
+            keberanian, dan kebersamaan. Mari mengenal lebih dekat kearifan
+            lokal yang membentuk identitas masyarakatnya
           </p>
           <div class="hero-buttons">
             <a href="#tentang" class="btn primary-btn">🌿 Jelajahi Yuk!</a>
+            <a
+              href="https://visit.virtualartgallery.com/museumtitiktemutulungagung"
+              class="btn secondary-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >🏛️ Museum Virtual</a
+            >
           </div>
         </div>
       </div>
@@ -155,7 +171,7 @@
           >
             <article class="budaya-card">
               <img
-                src="image/imageseni.png"
+                src="https://thumbs.dreamstime.com/z/indonesian-perform-reog-kendang-ceremony-tulungagung-s-anniversary-bersih-nagari-indonesian-perform-reog-kendang-274158473.jpg"
                 alt="Seni pertunjukan Tulungagung"
                 loading="lazy"
               />
@@ -233,7 +249,7 @@
           </a>
 
           <a
-            href="https://museum.tulungagung.go.id"
+            href="https://visit.virtualartgallery.com/museumtitiktemutulungagung"
             class="museum-card-link fade-up"
             target="_blank"
             rel="noopener noreferrer"
@@ -255,6 +271,46 @@
               </div>
             </article>
           </a>
+
+          <a
+            href="article.html"
+            class="budaya-card-link fade-up"
+            data-tooltip="Lihat Artikel Populer"
+          >
+            <article class="budaya-card">
+              <img
+                src="image/article.png"
+                alt="Artikel tentang Tulungagung"
+                loading="lazy"
+              />
+              <div class="budaya-info">
+                <span class="tag">Artikel</span>
+                <h3>Artikel Pilihan</h3>
+                <p>
+                  Baca artikel menarik tentang budaya, sejarah, dan kehidupan
+                  masyarakat Tulungagung.
+                </p>
+              </div>
+            </article>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PETA LOKASI -->
+    <section class="map-section" aria-labelledby="map-heading">
+      <div class="container">
+        <h2 id="map-heading">Tulungagung</h2>
+        <div class="map-container">
+          <iframe
+            title="Peta Kabupaten Tulungagung"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126438.45507567798!2d111.83296155606676!3d-8.064560183186226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78e388f7236d65%3A0x302778848d56a30!2sTulungagung%2C%20Kabupaten%20Tulungagung%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1680000000000!5m2!1sid!2sid"
+            width="100%"
+            height="450"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </section>
@@ -264,14 +320,49 @@
       <div class="container">
         <p>
           &copy; 2026 Kearifan Lokal Tulungagung —
-          <span style="color: var(--accent)">House Kuning Team</span>
+          <span class="footer-brand">House Kuning Team</span>
         </p>
       </div>
     </footer>
 
-    <!-- BACK TO TOP -->
-    <button class="back-to-top" aria-label="Kembali ke atas">↑</button>
-
     <script src="js/script.js"></script>
+
+    <!-- CHATBASE SCRIPT -->
+
+    <script>
+      (function () {
+        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+          window.chatbase = (...args) => {
+            if (!window.chatbase.q) {
+              window.chatbase.q = [];
+            }
+            window.chatbase.q.push(args[0]);
+          };
+          window.chatbase = new Proxy(window.chatbase, {
+            get(target, prop) {
+              if (prop === "q") {
+                return target.q;
+              }
+              return (...args) => target(prop, ...args);
+            },
+          });
+        }
+
+        const onLoad = function () {
+          const script = document.createElement("script");
+          script.src = "https://www.chatbase.co/embed.min.js";
+          script.id = "zyq1W30WwkgZkMaP3ngk9";
+          script.domain = "www.chatbase.co";
+          document.body.appendChild(script);
+        };
+
+        if (document.readyState === "complete") {
+          onLoad();
+        } else {
+          window.addEventListener("load", onLoad);
+        }
+      })();
+    </script>
+    <!-- AKHIR CHATBASE -->
   </body>
 </html>
